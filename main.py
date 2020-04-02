@@ -1,7 +1,7 @@
 from random import randint
 import pdb
 
-from config import NUM_PERSONS, MAX_LOCATION, NUM_ITERATION_PER_DAY, NUM_HOSPITALS, NUM_BEDS_PER_HOSPITAL, NUM_INITIAL_INFECTED
+from config import NUM_PERSONS, MAX_LOCATION, NUM_ITERATION_PER_DAY, NUM_HOSPITALS, NUM_BEDS_PER_HOSPITAL, NUM_INITIAL_INFECTED, NUM_ITERATIONS_TO_RUN
 
 from living_state import *
 from person import Person
@@ -92,4 +92,4 @@ def run_iters(num_iterations):
 
 
 if __name__ == "__main__":
-    run_iters(10000)
+    run_iters(NUM_ITERATIONS_TO_RUN)
